@@ -2,17 +2,14 @@ let binho
 
 function setup() {
   createCanvas(400, 400);
-  let x = random(width);
-  let y = random(height);
-  binho = new Walker(x,y);
-  apple = new Apple();
+  background(220);
+
   }
   
   function draw() {
-    background(220, 10);
-    apple.show();
-    apple.destroy(binho.x, binho.y);
-    binho.step();
-    binho.show();
-
+    let x = randomGaussian(width/2, 10);
+    let y = randomGaussian(height/2, 10);
+    let color = randomGaussian(128,100);
+    fill(color);
+    circle(x,y,10);
   }
