@@ -1,15 +1,14 @@
-let binho
-
+let binho 
 function setup() {
   createCanvas(400, 400);
-  background(220);
   let x = random(width);
-  let y = random(height);
+  let y = random(height); 
+  background(220);
   binho = new Walker(x, y);
-  }
-  
-  function draw() {
+
+}
+
+function draw() {
     binho.show();
     binho.step();
-
-  }
+    }
