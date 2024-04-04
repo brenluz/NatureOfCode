@@ -11,7 +11,6 @@ class Walker {
     }
 
     step() {
-
         this.x += noise(this.y) - 0.5;
         this.y += noise(this.x) - 0.5;
     }
